@@ -30,13 +30,16 @@ have been assigned to them.
  > 1) Initialize the *K* cluster centers *C* to some random values¹ or, alternatively, to *K* random points in the dataset.  
  > 2) Initialize the cluster assignments *Y* to the nearest cluster of each data point.  
  > 3) While Y changed during the last iteration do:  
+ > {
  > 4)   Y_i = nearest_centroid(X_i, C) # assign each point to the nearest centroid².  
- > 5)   C = recompute_centroids(Y_i, X_i) # recompute each centroid as the mean of the points assigned to it³.  
+ > 5)   C = recompute_centroids(Y_i, X_i) # recompute each centroid as the mean of the points assigned to it².  
+ > }
  > 6) Return C #Final stable centroids.   
  >   
  > ¹ To avoid degenerate solutions, make sure that the random values are in the range taken by the components of the data set vectors.  
- > ² ![Nearest centroid](img/image37.png)  
- > ³ ![Update centroids](img/image38.png)  
+ > ² *Nearest_centroid* and *recompute_centroids* have to compute respectively:   
+ > ![Nearest centroid](img/image37.png)  
+ > ![Update centroids](img/image38.png)  
 
 - **Q2** Try the implemented K-Means algorithm with K=3 in the first
 two dimensions of the iris dataset, so you can visualize it. Then try
