@@ -28,11 +28,11 @@ have been assigned to them.
 
  Here is the pseudocode for the K-Means algorithm:  
  1) **Initialize the _K_ cluster centers _C_**  
- # To initialize use random values¹ or, alternatively, *K* random points in the dataset.  
+ \# To initialize use random values¹ or, alternatively, *K* random points in the dataset.  
  2) **While Y changed during the last iteration do:**   
- #Assign each point to the nearest centroid².  
+ \# Assign each point to the nearest centroid².  
  3) &nbsp;&nbsp;&nbsp;  **Y[i] = nearest_centroid(X[i], C)**  
- #Recompute each centroid as the mean of the points assigned to it².  
+ \# Recompute each centroid as the mean of the points assigned to it².  
  4) &nbsp;&nbsp;&nbsp;  **C = recompute_centroids(Y, X)**  
  5) **Return C** #Final stable centroids.   
      
