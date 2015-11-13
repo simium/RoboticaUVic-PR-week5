@@ -27,11 +27,11 @@ centroid, and then recomputes the centroids based on the points that
 have been assigned to them.  
 
  Here is the pseudocode for the K-Means algorithm:  
- 1) **Initialize the *K* cluster centers *C* ** #Use some random values¹ or, alternatively, to *K* random points in the dataset.  
+ 1) **Initialize the *K* cluster centers *C*; ** #Use some random values¹ or, alternatively, to *K* random points in the dataset.  
  2) **While Y changed during the last iteration do:**   
- 3) &nbsp;&nbsp;&nbsp;  **Y[i] = nearest_centroid(X[i], C)** # assign each point to the nearest centroid².  
- 4) &nbsp;&nbsp;&nbsp;  **C = recompute_centroids(Y, X)** # recompute each centroid as the mean of the points assigned to it².  
- 5) **Return C** #Final stable centroids.   
+ 3) &nbsp;&nbsp;&nbsp;  **Y[i] = nearest_centroid(X[i], C);** #Assign each point to the nearest centroid².  
+ 4) &nbsp;&nbsp;&nbsp;  **C = recompute_centroids(Y, X);** #Recompute each centroid as the mean of the points assigned to it².  
+ 5) **Return C;** #Final stable centroids.   
      
  > ¹ To avoid degenerate solutions, make sure that the random values are in the range taken by the components of the data set vectors.  
  > ² *Nearest_centroid* and *recompute_centroids* have to compute respectively:   
