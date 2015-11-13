@@ -35,7 +35,7 @@ have been assigned to them.
  > 6) Return C #Final stable centroids.   
  > **(1)** To avoid degenerate solutions, make sure that the random values are in the range taken by the components of the data set vectors.  
  > *Nearest_centroid* and *recompute_centroids* have to compute respectively:   
- > ![Nearest centroid](img/37.png) &nbsp;&nbsp;&nbsp; ![Update centroids](img/38.png)  
+ > ![Nearest centroid](img/image37.png) &nbsp;&nbsp;&nbsp; ![Update centroids](img/image38.png)  
 
 - **Q2** Try the implemented K-Means algorithm with K=3 in the first
 two dimensions of the iris dataset, so you can visualize it. Then try
