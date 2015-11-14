@@ -27,7 +27,7 @@ centroid, and then recomputes the centroids based on the points that
 have been assigned to them.  
 
  Here is the pseudocode for the K-Means algorithm:  
- 1) `Initialize the _K_ cluster centers _C_` # To initialize use random values¹ or, alternatively, *K* random points in the dataset.  
+ 1) `Initialize the K cluster centers C` # To initialize use random values¹ or, alternatively, *K* random points in the dataset.  
  2) `While Y changed during the last iteration do:`  
  \# Assign each point to the nearest centroid².  
  3) &nbsp;&nbsp;&nbsp;  `Y[i] = nearest_centroid(X[i], C)`  
